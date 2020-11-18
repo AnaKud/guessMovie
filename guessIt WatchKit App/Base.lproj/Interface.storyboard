@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17506" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Rectangle-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="Rectangle" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="guessIt_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="EWP-6o-ao7">
+                            <items>
+                                <label width="0.90000000000000002" alignment="center" text="Джентельмены удачи" textAlignment="center" numberOfLines="0" id="vkH-MV-Mtv"/>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="🎩☘️" id="tpe-1S-b4j">
+                                    <fontDescription key="font" type="system" pointSize="26"/>
+                                    <connections>
+                                        <action selector="refreshAction" destination="AgC-eL-Hgc" id="4u5-f2-yIc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="myButton" destination="tpe-1S-b4j" id="xKJ-lr-WOR"/>
+                        <outlet property="myLable" destination="vkH-MV-Mtv" id="1wM-GK-lVc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="108" y="-15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="300" height="300"/>
+    </resources>
+</document>
